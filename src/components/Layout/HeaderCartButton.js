@@ -16,6 +16,7 @@ const HeaderCartButton = (props) => {
     btnIsHighlighted ? classes.bump : ""
   }`;
 
+  // cleanup timer before remounting
   useEffect(() => {
     if (items.length === 0) {
       return;
